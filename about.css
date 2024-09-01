@@ -1,0 +1,134 @@
+
+
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.section-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.section-body {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.text-body {
+    max-width: 450px;
+    
+}
+
+#summary-image {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+}
+
+#address {
+    z-index: 1;
+    position: relative;
+    top: 140px;
+    left: -190px;
+    background: white;
+    border: solid 1px var(--background-light-gray);
+    border-radius: 16px;
+    margin: 0%;
+}
+
+.section-address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+} 
+
+#team {
+    width: 100%;
+    min-width: 400px;
+}
+
+#location {
+    width: 100%;
+    min-width:500px;
+    margin-top: -50;
+}
+
+#location-image {
+    max-width: 800px;
+    display: flex;
+}
+
+
+/* team members section */
+.wrap {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.member {
+    max-width: 250px;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avator {
+    display: flex;
+    
+}
+
+.avator > img {
+    max-width: 250px;
+    border: 1px solid var(--background-light-gray);
+}
+
+.info {
+    padding: 8px;
+    background: var(--background-light-gray);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+
+
+
+#page-under-construction {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    align-items: center;
+    color: red;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    white-space: nowrap;
+    }
+    
+a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-underline {
+    width: 100%;
+    background: var(--background-light-gray);
+    height: 1px;
+}
