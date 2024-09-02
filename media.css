@@ -7,10 +7,10 @@
     display: block;
     padding-left: 16px;
     }
-
+/* 
     .contact-element {
         font-size: 24px;
-    }
+    } */
 
     #get-started {
         display: none;
@@ -25,6 +25,8 @@
 
 
 @media screen and (max-width: 768px) {
+
+    
     #get-started {
         display: none;
     }
@@ -62,14 +64,22 @@
         font-weight: 400;
     }
 
-    .paragraph {
-        font-size: 24px;
-    }
+    
 }
 
 
 
 @media screen and (max-width: 500px) {
+
+    html {
+        width: 100vw;
+        min-width: 760px;
+    }
+    
+    body {
+        min-width: 760px;
+    }
+
     #image-heading {
         aspect-ratio: 9/10;
         
@@ -90,13 +100,18 @@
     #construction-image-1 {
         display: flex;
         width: 100%;
-        border: 1px solid black;
+        /* border: 1px solid black; */
         min-width: 650px;
     }
 
     .text-card {
         /* border: 1px solid black; */
         align-self: center;
+        align-items: flex-start;
+    }
+
+    .text-card .get-started {
+        margin-left: 16px;
     }
 
     .footer-wrapper {
@@ -114,6 +129,21 @@
 
     .paragraph, .list {
         font-size: 24px;
+    }
+
+    textarea {
+        width: 90%;
+        align-self: center;
+    }
+
+    #booking {
+        min-width: 500px;
+    }
+
+    .list {
+        /* border: 1px solid black; */
+        align-self: left;
+        margin-left: 16px;
     }
 }
 
