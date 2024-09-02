@@ -1,0 +1,86 @@
+
+@media screen and (max-width: 1048px) {
+    .nav-button {
+        display: none;
+        }
+    #icon-menu {
+    display: block;
+    padding-left: 16px;
+    }
+
+    .contact-element {
+        font-size: 24px;
+    }
+
+    #get-started {
+        display: none;
+    }
+
+    #image-heading {
+        aspect-ratio: auto;
+    }
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+    #get-started {
+        display: none;
+    }
+
+    #image-heading {
+        aspect-ratio: 9/10;
+    }
+
+    .col-small-bottom {
+        flex-direction: column-reverse;
+        align-items: center;
+
+    }
+
+    .plan-3d-text, .plans-text {
+        align-self: center;
+        text-align: left;
+    }
+
+    .reversible {
+        flex-direction: column-reverse;
+        align-items: center;
+        background: var(--background-light-gray);
+        margin: 0 8px;
+    }
+    .expand {
+        width: 100%;
+        margin: 0 8px;
+    }
+    #v3-wrapper {
+        padding: 0;
+    }
+
+    .title {
+        font-weight: 400;
+    }
+
+    .paragraph {
+        font-size: 24px;
+    }
+}
+
+
+
+@media (max-width: 500px) {
+    #image-heading {
+        aspect-ratio: 9/10;
+        
+    }
+}
+
+    .image-heading {
+        border: solid 1px red;
+        min-height: 0;
+        /* align-items: flex-start; */
+    }
+}
+
+
