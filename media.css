@@ -69,18 +69,53 @@
 
 
 
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
     #image-heading {
         aspect-ratio: 9/10;
         
     }
-}
 
     .image-heading {
-        border: solid 1px red;
         min-height: 0;
         /* align-items: flex-start; */
     }
+
+    
+    #construction-top {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #construction-image-1 {
+        display: flex;
+        width: 100%;
+        border: 1px solid black;
+        min-width: 650px;
+    }
+
+    .text-card {
+        /* border: 1px solid black; */
+        align-self: center;
+    }
+
+    .footer-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #teem {
+        display: none;
+    }
+
+    footer ul {
+        border-right: black
+    }
+
+    .paragraph, .list {
+        font-size: 24px;
+    }
 }
+
 
 
