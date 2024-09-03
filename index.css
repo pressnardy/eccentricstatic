@@ -608,7 +608,7 @@ section {
 .contact-elements {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     box-sizing: border-box;
 
 }

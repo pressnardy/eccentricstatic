@@ -71,13 +71,17 @@
 
 @media screen and (max-width: 600px) {
 
-    html {
+    html, body {
         width: 100vw;
         min-width: 760px;
     }
     
-    body {
-        min-width: 760px;
+    /* body {
+        min-width: 600px;
+    } */
+
+    nav {
+        padding-right: 16px;
     }
 
     #image-heading {
@@ -137,6 +141,7 @@
     textarea {
         width: 90%;
         align-self: center;
+        font-size: 24px;
     }
 
     #booking {
@@ -183,6 +188,38 @@
 
     .small {
         padding-left: 16px;
+    }
+
+    .contact-elements {
+        flex-wrap: nowrap;
+        padding-left: 0;
+        padding-right: 0%;
+        
+    }
+
+    nav > #logo {
+        padding-right: 8px;
+        min-width: 280px;
+    }
+
+    #contacts .contact-elements {
+        font-size: 24px;
+    }
+
+    input.input-text, footer {
+        font-size: 24px;
+    }
+
+    #services-footer > .paragraph > a {
+        text-transform: uppercase;
+    }
+
+    .designer.text-white {
+        padding-left: 20px;
+    }
+
+    a > svg {
+        background-color: transparent;
     }
 }
 
