@@ -947,6 +947,7 @@ section {
     height: 2px;
     background: black;
     flex-grow: 0.2;
+    max-width: 150px;
 }
 
 .highlights-text {
@@ -987,4 +988,13 @@ section {
     align-items: flex-start;
 }
 
+
+.experiece-restrain {
+    max-width: 1000px;
+    display: flex;
+    flex-grow: .4;
+    justify-content: space-evenly;
+    gap: 16px;
+    /* border: 1px solid red; */
+}
 

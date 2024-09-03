@@ -69,7 +69,7 @@
 
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
 
     html {
         width: 100vw;
@@ -90,6 +90,9 @@
         /* align-items: flex-start; */
     }
 
+    #we, .list-horizontal {
+        font-weight: 400;
+    }
     
     #construction-top {
         flex-direction: column;
@@ -144,6 +147,42 @@
         /* border: 1px solid black; */
         align-self: left;
         margin-left: 16px;
+    }
+
+    #services-body {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    input.submit {
+        font-size: 28px;
+        padding: 4px 24px;
+        min-width: 200px;
+    }
+
+    a.get-started {
+        
+        font-size: 28px;
+        padding: 4px 24px;
+        min-width: 200px;
+    
+    }
+
+    .paragraph {
+        min-width: 480px;
+        /* border: 1px solid red; */
+        
+    }
+
+    .plan-3d-text, .highlights-text, .text-card {
+        min-width: 500px;
+    }
+
+
+    .small {
+        padding-left: 16px;
     }
 }
 
