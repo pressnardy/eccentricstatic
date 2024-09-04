@@ -1,58 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Collapsible Menu</title>
-  <style>
-    /* CSS styles for the menu */
-    .menu-button {
-      background-color: #333;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      cursor: pointer;
-    }
-
-    a {
-        text-decoration: none;
-    }
-
-    .menu-button:hover {
-      background-color: #444;
-    }
-
-    .menu-content {
-      display: none;
-      padding: 10px;
-    }
-    .menu-item {
-        padding: 4px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
 </head>
 <body>
-  <button class="menu-button">Menu</button>
-  <div class="menu-content">
-      <div class="menu-item"><a href="projects.html">Projects</a></div>
-      <div class="menu-item"><a href="about.html">About Us</a></div>
-      <div class="menu-item"><a href="#contact">Contact Us</a></div>
-  </div>
-  <script>
+    <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="user_name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="user_email" required>
+        <br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <br>
+        <button type="submit">Send</button>
+    </form>
 
-    const menuButton = document.querySelector('.menu-button');
-    const menuContent = document.querySelector('.menu-content');
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("Yiw6AivJA4G9RMIvo"); // Replace with your EmailJS public key
+        })();
 
-    menuButton.addEventListener('click', () => {
-    menuContent.style.display   
-    = menuContent.style.display === 'none' ? 'block' : 'none';
-    });
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
 
-    document.addEventListener('click', (event) => {
-    if (!menuButton.contains(event.target) && !menuContent.contains(event.target)) {
-        menuContent.style.display   
-    = 'none';
-    }
-    });
-
-  </script>
+            emailjs.sendForm('service_ix20qjb', 'template_ktsfry6', this)
+                .then(function() {
+                    alert('SUCCESS!');
+                }, function(error) {
+                    alert('FAILED...', error);
+                });
+        });
+    </script>
 </body>
 </html>

@@ -37,12 +37,35 @@ textarea.addEventListener('blur', function() {
 
 });
 
-// document.addEventListener('click', (event) => {
-//     if (!textarea.contains(event.target)) {
-//         textarea.style.height = 'reset';
-//         textarea.style.width = '90%';
-//     }
-// });
+
+// sending meesage 
+
+(function() {
+    emailjs.init("Yiw6AivJA4G9RMIvo"); // Replace with your EmailJS public key
+})();
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    emailjs.sendForm('service_ix20qjb', 'template_ktsfry6', this)
+        .then(function() {
+            alert('SUCCESS!');
+        }, function(error) {
+            alert('FAILED...', error);
+        });
+});
+
+document.getElementById('booking-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    emailjs.sendForm('service_ix20qjb', 'template_sv55gz2', this)
+        .then(function() {
+            alert('SUCCESS!');
+        }, function(error) {
+            alert('FAILED...', error);
+        });
+});
+
 
 
 

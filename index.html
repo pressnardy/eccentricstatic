@@ -9,6 +9,7 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<link href="index.css" rel="stylesheet">
 	<link href="media.css" rel="stylesheet">
+	<script defer src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 	<script defer src="index.js"></script>
 </head>
 <body>
@@ -467,22 +468,22 @@
 			Send Message
 		</div>
 		<div id="message" class="contact-element">
-			<form>
+			<form id="contact-form">
 				<div id="client-contacts">
 					<label>
-						<input class="input-text" id="client-email" name="email" type="text" placeholder="Email">
+						<input class="input-text" id="client-email" name="client_email" type="text" placeholder="Email">
 					</label>
 					<br>
 					<br>
 					<br>
 					<label>
-						<input class="input-text" id="client-phone" type="text" placeholder="Phone">
+						<input class="input-text" id="client-phone" name="client_phone" type="text" placeholder="Phone">
 					</label>
 				</div>
 				<br>
 				<br>
 				<label>
-					<textarea id="client-message" rows="8" cols=""></textarea>
+					<textarea id="client-message" name="message" rows="8" cols=""></textarea>
 				</label>
 				<input type="submit" class="submit big-text" value="Send">
 			</form>
@@ -495,30 +496,30 @@
 			Book Meeting
 		</div>
 		<div id="calender">
-			<form>
+			<form id="booking-form">
 				<div class="date-time-wrapper">
 					<div class="date-picker booking-element">
 						<label> Date
-							<input id="date" type="date">
+							<input id="date" name="date" type="date">
 						</label>
 					</div>
 
 					<div class="time-picker booking-element">
 						<label for="time"> Time
-							<input id="time" type="time">
+							<input id="time" name="time" type="time">
 						</label>
 					</div>
 				</div>
 				
 				<div class="location-picker booking-element">
 					<label>
-						<input id="location" type="text" class="input-text" placeholder="Place">
+						<input id="location" name="location" type="text" class="input-text" placeholder="Place">
 					</label>
 				</div>
 				
 				<div class="client-contact booking-element">
 					<label>
-						<input class="input-text" id="client-contact" type="text" placeholder="email/phone">
+						<input class="input-text" id="client-contact" name="client_contact" type="text" placeholder="email/phone">
 					</label>
 				</div>
 				<div>
