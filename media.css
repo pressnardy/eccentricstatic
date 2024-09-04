@@ -7,10 +7,7 @@
     display: block;
     padding-left: 16px;
     }
-/* 
-    .contact-element {
-        font-size: 24px;
-    } */
+
 
     #get-started {
         display: none;
@@ -84,6 +81,10 @@
         padding-right: 16px;
     }
 
+    #menu #icon-menu {
+        padding-left: 2px;
+    }
+
     #image-heading {
         aspect-ratio: 9/10;
         
@@ -145,7 +146,7 @@
     }
 
     #booking {
-        min-width: 500px;
+        min-width: 600px;
     }
 
     .list {
@@ -169,7 +170,7 @@
 
     a.get-started {
         
-        font-size: 28px;
+        font-size: 32px;
         padding: 4px 24px;
         min-width: 200px;
     
@@ -197,6 +198,9 @@
         
     }
 
+    nav {
+        justify-content: space-evenly;
+    }
     nav > #logo {
         padding-right: 8px;
         min-width: 280px;
@@ -204,7 +208,14 @@
 
     #contacts .contact-elements {
         font-size: 24px;
+        
     }
+
+    .contact-element#email {
+        padding-right: 0;
+        padding-left: 4px;
+    }
+
 
     input.input-text, footer {
         font-size: 24px;
@@ -220,6 +231,31 @@
 
     a > svg {
         background-color: transparent;
+    }
+
+    input#location, input#client-contact, input#client-email, 
+    input#client-phone {
+        font-size: 32px;
+        border-bottom: solid 1px var(--light-blue);
+    }
+
+    label {
+        font-size: 32px;
+    }
+
+    .title#title-message-box, .title#booking-title {
+        text-transform: uppercase;
+        font-size: 32px;
+    }
+
+    #message > form {
+        min-width: 90%;
+    }
+
+    .more > a > svg {
+        padding: 8px 16px 8px 24px;
+        border: 1px solid var(--light-blue);
+        border-radius: 16px;
     }
 }
 
