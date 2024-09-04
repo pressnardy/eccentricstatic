@@ -21,7 +21,7 @@ const textarea = document.querySelector('textarea');
 textarea.addEventListener('focus', function() {
     if (window.innerWidth <= 768) {
     textarea.style.height = '60vh';
-    textarea.style.width = '90vh';
+    textarea.style.width = '80vh';
     textarea.style.background = 'var(--background-baige)';
     textarea.style.fontSize = '28px';
     textarea.style.color = 'black';

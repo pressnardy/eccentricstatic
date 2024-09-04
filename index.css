@@ -501,7 +501,7 @@ section {
     padding: 0 16px 0 16px;
     box-sizing: border-box;
     /*border: solid 1px red;*/
-    gap: 8px;
+    gap: 16px;
     flex-wrap: wrap;
 }
 
@@ -657,7 +657,9 @@ section {
     align-items: center;
     gap: 32px;
     padding: 16px 16px;
+    width: 100%;
     max-width: 400px;
+    margin-top: 32px;
     
 }
 

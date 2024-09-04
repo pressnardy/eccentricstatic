@@ -198,6 +198,7 @@
         
     }
 
+
     nav {
         justify-content: space-evenly;
     }
@@ -239,6 +240,7 @@
         border-bottom: solid 1px var(--light-blue);
     }
 
+
     label {
         font-size: 32px;
     }
@@ -252,10 +254,23 @@
         min-width: 90%;
     }
 
+    form#booking-form {
+        display: flex;
+        flex-direction: column;
+        max-width: 450px;
+    }
     .more > a > svg {
         padding: 8px 16px 8px 24px;
         border: 1px solid var(--light-blue);
         border-radius: 16px;
+    }
+
+    .more > a > svg > polyline {
+        stroke-width: 4px;
+    }
+
+    .more > a > svg > line {
+        stroke-width: 4px;
     }
 }
 
