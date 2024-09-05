@@ -305,25 +305,12 @@ section {
 }
 
 
-.plan-3d-text {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    min-width: 250px;
-    max-width: 300px;
-    margin-right: 8px;
-    flex-grow: 1;
-    padding: 16px;
-    align-self: flex-end;
-    text-align: right;
-}
-
 .plan-3d-text > .paragraph {
     text-align: left;
 }
 
 .plan-3d-text > .more {
-    margin-left: 8px;
+    margin-left: 4px;
 }
 
 
@@ -430,6 +417,7 @@ section {
     flex-direction: column;
     justify-content: space-between;
     flex-grow: 1;
+    flex-wrap: wrap-reverse;
 }
 
 #col-small-top {
@@ -447,17 +435,38 @@ section {
     color: black;
 }
 .col-small-bottom {
-    /*border: var(--dev-red);*/
+    /* border: var(--dev-red); */
     display: flex;
     padding: 8px;
-    justify-content: center;
+    /* justify-content: center; */
+    align-items: flex-end;
     max-width: 1200px;
+    /* flex-wrap: wrap-reverse; */
 
 }
+
+.plan-3d-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 250px;
+    max-width: 400px;
+    margin-right: 8px;
+    padding: 16px;
+    align-self: flex-end;
+    text-align: right;
+    /* border: 1px solid red; */
+}
+
+
+/* #backyards, #plans > .plans-wrapper {
+    flex-wrap: wrap-reverse;
+} */
 
 #img-2 {
     /*aspect-ratio: auto;*/
     max-width: 650px;
+    min-width: 500px;
     width: 100%;
 
 }
@@ -500,9 +509,9 @@ section {
     justify-content: center;
     padding: 0 16px 0 16px;
     box-sizing: border-box;
-    /*border: solid 1px red;*/
+    /* border: solid 1px red; */
     gap: 16px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 #construction-images-wrapper {
@@ -754,9 +763,7 @@ footer {
 
 }
 
-#services-footer {
 
-}
 
 footer ul {
     border-right: 1px solid white;
@@ -959,6 +966,7 @@ section {
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
+    min-width: 400px;
     max-width: 400px;
 }
 
