@@ -28,11 +28,11 @@ padding: 0;
 width: 100%;
 }
 
-nav {
+/* nav {
 display: flex;
 flex-wrap: nowrap;
 justify-content: space-between;
-}
+} */
 
 #logo {
 /*background: var(--gradient-blue);*/

@@ -1,14 +1,21 @@
 
 const menuButton = document.querySelector('#menu');
 const menuContent = document.querySelector('.menu-content');
+// const menuSection = document.querySelector('#menu-contect-section');
 
 menuButton.addEventListener('click', () => {
-menuContent.style.display = menuContent.style.display === 'none' ? 'block' : 'none';
+menuContent.style.display = menuContent.style.display === 'none' ? '' : 'none';
+
+// menuSection.style.display = menuContent.style.display === 'none' ? 'block' : 'none';
+    
 });
+
+    
 
 document.addEventListener('click', (event) => {
 if (!menuButton.contains(event.target) && !menuContent.contains(event.target)) {
     menuContent.style.display = 'none';
+    // menuSection.style.display = 'none';
 }
 });
 
