@@ -100,7 +100,7 @@ nav {
     justify-self: flex-end;
     background: white;
     min-width: fit-content;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 100px;
 }
 
