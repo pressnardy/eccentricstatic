@@ -24,6 +24,9 @@ h1 {
 
 html, body {
     
+    display: flex;
+    flex-direction: column;
+    min-width: fit-content;
     height: 100%;
     padding: 0;
     width: 100%;
@@ -81,22 +84,33 @@ nav {
     display: none;
 }
 
+/* .width-100 { 
+    display: block;
+    width: inherit;
+    border: 1px solid red; 
+    text-align: right;
+    min-width: inherit; 
+ }  */
+
+
 #menu-contents-section {
     display: flex;
-    position: absolute;
-    z-index: 1;
+    position: relative;
+    top: 0;
+    z-index: 2;
     background: transparent;
     display: flex;
     justify-content: flex-end;
-    /* width: 100%; */
     /* border: 1px solid red; */
+    
 }
 
 .menu-content {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: flex-end;
-    padding: 8px 8px;
+    gap: 16px;
+    padding: 8px 16px;
     justify-self: flex-end;
     background: white;
     min-width: fit-content;
@@ -107,6 +121,8 @@ nav {
 .menu-item {
     padding: 4px;
     border-bottom: 2px solid var(--dark-blue);
+    
+
 }
 
 .nav-button {

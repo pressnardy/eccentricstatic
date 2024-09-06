@@ -118,10 +118,10 @@
 
 @media screen and (max-width: 600px) {
 
-    html, body {
+    /* html, body {
         width: 100vw;
         min-width: 760px;
-    }
+    } */
     
     /* body {
         min-width: 600px;
@@ -355,6 +355,15 @@
         flex-direction: column;
         gap: 32px;
         align-items: center;
+    }
+
+    .menu-item > a {
+        font-size: 28px;
+    
+    }
+
+    .menu-content {
+        margin-right: 16px;
     }
 
 }
