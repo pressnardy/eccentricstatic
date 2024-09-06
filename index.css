@@ -607,6 +607,7 @@ section {
     background: var(--purple-blue-gradient);
     background-size: 300%;
     border-radius: 16px;
+    /* min-width: fit-content; */
 }
 
 .contact-info {

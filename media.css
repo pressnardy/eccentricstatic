@@ -157,10 +157,12 @@
         font-size: 24px;
     }
 
-    textarea {
-        width: 90%;
+    textarea#client-message {
+        /* width: 95%; */
         align-self: center;
-        font-size: 24px;
+        font-size: 38px;
+        min-width: 500px;
+        padding: 8px;
     }
 
     #booking {
@@ -181,7 +183,7 @@
     }
 
     input.submit {
-        font-size: 28px;
+        font-size: 32px;
         padding: 4px 24px;
         min-width: 200px;
     }
@@ -252,10 +254,24 @@
         background-color: transparent;
     }
 
-    input#location, input#client-contact, input#client-email, 
-    input#client-phone {
-        font-size: 32px;
+      input#client-phone, input#client-email {
+        font-size: 40px;
+        border-bottom: solid 1px white;
+        min-width: 550px;
+
+    }
+
+     input#location, input#client-contact {
+        font-size: 40px;
         border-bottom: solid 1px var(--light-blue);
+        min-width: 550px;
+
+    }
+
+
+    .contacts-wrapper {
+        min-width: fit-content;
+        flex-basis: 600px;
     }
 
 
@@ -296,6 +312,12 @@
     .more > a > svg > line {
         stroke-width: 4px;
     }
+
+    form#contact-form, form#booking-form { 
+        max-width: fit-content;
+        /* flex-basis: 600px; */
+    }
+
 }
 
 

@@ -23,14 +23,15 @@ textarea.addEventListener('focus', function() {
     textarea.style.height = '60vh';
     textarea.style.width = '80vh';
     textarea.style.background = 'var(--background-baige)';
-    textarea.style.fontSize = '28px';
+    textarea.style.fontSize = '40px';
     textarea.style.color = 'black';
+    
     }
 });
   
 textarea.addEventListener('blur', function() {
-    textarea.style.height = '';
-    textarea.style.width = '90%';
+    textarea.style.height = '60vw';
+    textarea.style.width = '60vw';
     textarea.style.background = 'none';
     textarea.style.color = 'white';
 
