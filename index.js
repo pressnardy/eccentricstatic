@@ -25,28 +25,26 @@ if (!menuButton.contains(event.target) && !menuContent.contains(event.target)) {
 
 const textarea = document.querySelector('textarea');
   
-textarea.addEventListener('focus', function() {
-    if (window.innerWidth <= 768) {
-    textarea.style.height = '60vh';
-    textarea.style.width = '80vh';
-    textarea.style.background = 'var(--background-baige)';
-    textarea.style.fontSize = '40px';
-    textarea.style.color = 'black';
+textarea.addEventListener('click', function() {
+    if (window.innerWidth <= 400) {
+        textarea.style.height = '60vh';
+        textarea.style.width = '80vh';
+        textarea.style.background = 'var(--background-baige)';
+        textarea.style.fontSize = '40px';
+        textarea.style.color = 'black';
     
     }
 });
   
-textarea.addEventListener('blur', function() {
-    textarea.style.height = '60vw';
-    textarea.style.width = '60vw';
-    textarea.style.background = 'none';
-    textarea.style.color = 'white';
+document.addEventListener('click', (event) => {
+    if (!textarea.contains(event.target) && !textarea.contains(event.target)) {
+        textarea.style.height = '';
+        textarea.style.width = '';
+        textarea.style.background = 'none';
+        textarea.style.color = 'white';
+    }
+    });
 
-
-});
-
-
-// sending meesage 
 
 (function() {
     emailjs.init("Yiw6AivJA4G9RMIvo"); // Replace with your EmailJS public key
@@ -73,6 +71,8 @@ document.getElementById('booking-form').addEventListener('submit', function(even
             alert('FAILED...', error);
         });
 });
+
+
 
 
 

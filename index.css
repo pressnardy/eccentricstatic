@@ -940,7 +940,6 @@ textarea {
     background: none;
     border: 1px solid var(--light-blue);
     border-radius: 8px;
-    user-focus: none;
     color: white;
     padding: 0 8px;
     min-width: 400px;
