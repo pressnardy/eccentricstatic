@@ -23,14 +23,11 @@ h1 {
 
 
 html, body {
-    
+    padding: 0;
+    /* min-width: 760px; */
     display: flex;
     flex-direction: column;
     min-width: fit-content;
-    height: 100%;
-    padding: 0;
-    width: 100%;
-    /* min-width: 760px; */
 }
 
 nav {

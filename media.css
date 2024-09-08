@@ -118,15 +118,12 @@
 
 @media screen and (max-width: 600px) {
 
-    /* html, body {
-        width: 100vw;
-        min-width: 760px;
-    } */
+    /* html, body { */
+        /* width: 100vw;
+        min-width: 760px; */
+        /* min-height: 100vh; */
+    /* } */
     
-    /* body {
-        min-width: 600px;
-    } */
-
     nav {
         padding-right: 16px;
     }
@@ -412,6 +409,7 @@ a.get-started {
 
     #team-members .section-body.wrap {
         flex-direction: column;
+        /* min-width: 500px; */
     }
 
     .avator img, .info {

@@ -10,11 +10,11 @@
 
 
 
-.section-body {
+/* .section-body {
     display: flex;
     justify-content: space-between;
     gap: 16px;
-}
+} */
 
 #about-us {
     display: flex;
