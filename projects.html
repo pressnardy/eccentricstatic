@@ -1,16 +1,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <title>About Us</title>
     <link rel="icon" href="images/svg/logo.svg">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="layout.css" rel="stylesheet">
-	<link href="index.css" rel="stylesheet">
+    <!-- <link href="layout.css" rel="stylesheet"> -->
+    <link href="index.css" rel="stylesheet">
 	<link href="about.css" rel="stylesheet">
-	<link href="media.css" rel="stylesheet">
-	<script defer src="index.js"></script>
+    <link href="media.css" rel="stylesheet">
+    <script defer src="index.js"></script>
 </head>
 <body>
 <nav>
@@ -50,84 +50,174 @@
     </div>
     <div id="menu">
         <a href="#contacts" id="get-started">Get Started</a>
-        <a class="nav-button" href="about.html">About Us</a>
+        <a class="nav-button" href="projects.html">projects</a>
         <div id="icon-menu">
             <a>
-                <svg width="40" height="60" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="37" height="30" fill="#F5F5F5"></rect>
-                    <rect x="3" y="4" width="30" height="2" fill="#1BBBEF"></rect>
-                    <rect x="9" y="13" width="24" height="3" fill="#1BBBEF"></rect>
-                    <rect x="15" y="23" width="18" height="4" fill="#1BBBEF"></rect>
-                </svg>
+				<svg width="60" height="50" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect width="20" height="30" fill="none"></rect>
+					<rect x="3" y="4" width="30" height="2" fill="#1BBBEF"></rect>
+					<rect x="9" y="13" width="24" height="3" fill="#1BBBEF"></rect>
+					<!-- <rect x="15" y="23" width="18" height="4" fill="#1BBBEF"></rect> -->
+					<rect x="3" y="23" width="30" height="4" fill="#1BBBEF"></rect>
+				</svg>
+			</a>
             </a>
         </div>
     </div>
 </nav>
-<div class="menu-content paragraph">
-	<div class="menu-item"><a href="index.html">Home</a></div>
-	<div class="menu-item"><a href="about.html">About Us</a></div>
-	<div class="menu-item"><a href="#contacts">Contact Us</a></div>
-</div>
-<h1 id="page-under-construction">page under construction</h1>
+
+<section class="width-100">
+	<div id="menu-contents-section">
+		<div class="menu-content" style="display: none;">
+			<div class="menu-item"><a href="index.html">Home</a></div>
+			<div class="menu-item"><a href="about.html">About Us</a></div>
+			<div class="menu-item"><a href="#contacts">Contact Us</a></div>
+		</div>
+	</div>
+</section>
+<section class="nav-underline"></section>
+<br>
+<section id="homes">
+
+</section>
+<br>
+<section id="appartments">
+
+</section>
+<br>
+<section id="barkyards">
+
+</section>
+<section id="experience">
+	<div id="experience-wrapper">
+		<div class="line">
+
+		</div>
+		<div id="projects">
+			<div>
+				<span class="numbers">50+</span>
+			</div>
+			<div>
+				<span class="paragraph">Projects Completed</span>
+			</div>
+		</div>
+
+		<div>
+			<div>
+				<span class="numbers">10+</span>
+			</div>
+			<div>
+				<span class="paragraph">Years Experience</span>
+			</div>
+		</div>
+		<div>
+			<div>
+				<span class="numbers">30+</span>
+			</div>
+			<span class="paragraph">Clients Served</span>
+		</div>
+		<div class="line">
+
+		</div>
+	</div>
+</section>
 
 <section id="contacts">
 	<div id="contacts-title" class="title">
 		Reach Us Anywhere Any Time Any Place
 	</div>
 	<br>
+	
+	<div class="contact-elements">
+		<div id="phone" class="contact-element">
+			<div class="icon">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="18" width="18">
+					 <path d="M347.1 24.6c7.7-18.6 28-28.5 47.4-23.2l88 24C499.9 30.2 512 46 512 64c0 247.4-200.6 448-448 448c-18 0-33.8-12.1-38.6-29.5l-24-88c-5.3-19.4 4.6-39.7 23.2-47.4l96-40c16.3-6.8 35.2-2.1 46.3 11.6L207.3 368c70.4-33.3 127.4-90.3 160.7-160.7L318.7 167c-13.7-11.2-18.4-30-11.6-46.3l40-96z"
+					 stroke-width="4" stroke="red">
+					 </path>
+				</svg>
+			</div>
+			<div class="mail-phone">
+				0706088217
+			</div>
+		</div>
+		<div id="email" class="contact-element">
+			<div class="icon">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="18" height="18">
+					<path d="M64 112c-8.8 0-16 7.2-16 16l0 22.1L220.5 291.7
+					c20.7 17 50.4 17 71.1 0L464 150.1l0-22.1
+					c0-8.8-7.2-16-16-16L64 112z
+					M48 212.2L48 384c0 8.8 7.2 16 16 16
+					l384 0c8.8 0 16-7.2 16-16l0-171.8
+					L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128
+					C0 92.7 28.7 64 64 64l384 0c35.3 0 64 28.7 64 64
+					  l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128z"></path>
+				</svg>
+			</div>
+			<div class="mail-phone">zimmarish@gmail.com</div>
+		</div>
+	</div>
+	<br>
 	<div id="contacts-body">
 	<div class="contacts-wrapper">
+		<br>
 		<div class="title" id="title-message-box">
 			Send Message
 		</div>
+		<br>
 		<div id="message" class="contact-element">
-			<form>
+			<form id="contact-form">
 				<div id="client-contacts">
 					<label>
-						<input class="input-text" id="client-email" name="email" type="text" placeholder="Email">
+						<input class="input-text" id="client-email" name="client_email" type="text" placeholder="Email">
 					</label>
 					<br>
 					<br>
+					<br>
 					<label>
-						<input class="input-text" id="client-phone" type="text" placeholder="Phone">
+						<input class="input-text" id="client-phone" name="client_phone" type="text" placeholder="Phone">
 					</label>
 				</div>
 				<br>
+				<br>
 				<label>
-					<textarea id="client-message" rows="8" cols="48"></textarea>
+					<textarea id="client-message" name="message" rows="8" cols="" placeholder="Type Message"></textarea>
 				</label>
 				<input type="submit" class="submit big-text" value="Send">
 			</form>
 		</div>
 	</div>
-
+	
 	<div id="booking">
-		<div class="title">
+		<br>
+		<div class="title" id="booking-title">
 			Book Meeting
 		</div>
 		<div id="calender">
-			<form>
+			<form id="booking-form">
 				<div class="date-time-wrapper">
 					<div class="date-picker booking-element">
 						<label> Date
-							<input id="date" type="date">
+							<input id="date" name="date" type="date">
 						</label>
 					</div>
 
 					<div class="time-picker booking-element">
 						<label for="time"> Time
-							<input id="time" type="time">
+							<input id="time" name="time" type="time">
 						</label>
 					</div>
 				</div>
+				
 				<div class="location-picker booking-element">
 					<label>
-						<input id="location" type="text" class="input-text" placeholder="Place">
+						<input id="location" name="location" type="text" class="input-text" placeholder="Place">
 					</label>
 				</div>
+				
 				<div class="client-contact booking-element">
 					<label>
-						<input class="input-text" id="client-contact" type="text" placeholder="email/phone">
+						<input class="input-text" id="client-contact" name="client_contact" type="text" placeholder="email/phone">
 					</label>
 				</div>
 				<div>
@@ -136,9 +226,12 @@
 					</label>
 				</div>
 			</form>
+			<br>
 		</div>
 	</div>
 	</div>
+	<br>
+	<br>
 </section>
 
 <footer>
