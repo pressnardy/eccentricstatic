@@ -384,9 +384,12 @@
     span.paragraph.xpr {
         font-size: 24px;
     }
+
+    input.submit.big-text, input#book.submit {
+        font-size: 40px;
+    }
+    
 }
-
-
 
 
 .more > a > svg {
