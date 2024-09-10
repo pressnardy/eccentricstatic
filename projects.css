@@ -1,0 +1,88 @@
+
+section#backyards, section#homes, section#apartments {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    ba
+}
+
+
+.section-wrapper-projects {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 64px;
+    column-gap: 32px;
+    /* background: rgb(238, 238, 238); */
+    padding: 32px;
+    justify-content: center;
+    /* border: 1px solid red; */
+    max-width: 900px;
+}
+
+.section-wrapper-projects img {
+    max-width: 500px;
+}
+img#backyard-1, #backyard-2, #backyard-3 {
+    max-width: 500px;
+}
+
+#apartments {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#apartments > .section-wrapper-projects {
+   
+    max-width: 1300px;
+    
+}
+
+.image-plus-text {
+    display: flex;
+    gap: 16px;
+    background: rgb(247, 204, 204);
+    /* align-items: flex-end; */
+    max-width: 600px;
+    padding: 16px;
+}
+
+.text-image {
+    display: flex;
+    gap: 16px;
+}
+
+.no-wrap {
+    white-space: nowrap;
+}
+
+#curvy, #slayer {
+    margin: 32px;
+}
+
+.image-plus-text.slayer {
+    display: flex;
+    gap: 16px;
+    background: rgb(230, 229, 229);
+    /* align-items: flex-end; */
+    max-width: 600px;
+    padding: 16px;
+}
+
+.nav-underline {
+    width: 100%;
+    background: var(--background-light-gray);
+    height: 1px;
+}
+
+section#galary-title {
+    text-align: center;
+}
+
+.galary-title {
+    font-size: 32px;
+    font-weight: bold;
+}
