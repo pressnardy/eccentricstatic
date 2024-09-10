@@ -1,10 +1,22 @@
+:root {
+    --purple: #56013b;
+    --dark-blue: #1bbbef;
+    --light-blue: #0680a8;
+    --background-baige: rgb(226, 238, 237);
+    --thin: 100;
+    --dev-red: solid 1px red;
+    --background-light-gray: #e0e0e0;
+    --purple-blue-gradient: linear-gradient(45deg, #56013b, #1bbbef, #421935);
+    --gradient-blue: linear-gradient(45deg, #0587da, #1bbbef, #0587da);
+}
+
 
 section#backyards, section#homes, section#apartments {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    ba
+    
 }
 
 
@@ -82,7 +94,19 @@ section#galary-title {
     text-align: center;
 }
 
-.galary-title {
+.galary-title, .gradient {
     font-size: 32px;
     font-weight: bold;
+    background-image: var(--purple-blue-gradient);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
+.gradient {
+    font-size: 32px;
+    font-weight: bold;
+    background-image: var(--purple-blue-gradient);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
