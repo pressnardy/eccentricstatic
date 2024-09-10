@@ -336,7 +336,7 @@
         border: 1px solid var(--light-blue);
         border-radius: 40px;
         min-width: 200px;
-        width: 200px;
+        width: 210px;
         height: 80px;
     }
 
@@ -455,6 +455,10 @@ a.get-started {
         font-size: 32px;
         width: 100%;
         /* min-width: 450px; */
+    }
+
+    #address > div.paragraph.title.bold {
+        font-size: 24px;
     }
 }
 
