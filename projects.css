@@ -94,6 +94,7 @@ section#galary-title {
     text-align: center;
 }
 
+
 .galary-title, .gradient {
     font-size: 32px;
     font-weight: bold;
@@ -110,3 +111,8 @@ section#galary-title {
     -webkit-text-fill-color: transparent;
 }
 
+#curvy-background.image-plus-text {
+    border-radius: 24px;
+    justify-self: flex-start;
+    margin-right: 60px;
+}
