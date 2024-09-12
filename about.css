@@ -1,20 +1,20 @@
 
 
 
-/* section {
+section {
     display: flex;
     justify-content: center;
     align-items: center;
     
-} */
+} 
 
 
 
-/* .section-body {
+.section-body {
     display: flex;
     justify-content: space-between;
     gap: 16px;
-} */
+} 
 
 #about-us {
     display: flex;
@@ -59,10 +59,23 @@
     padding: 0 16px;
 } 
 
-#team {
-    width: 100%;
-    min-width: 400px;
+.section-body {
+    padding: 0 32px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
+.text-body.paragraph {
+    min-width: 350px;
+}
+
+img#team {
+    /* aspect-ratio: 15/10; */
+    width: 100%;
+    min-width: 500px;
+    /* max-height: 400px; */
+}
+
 
 #our-location {
     width: 100%;
@@ -144,4 +157,11 @@ a:hover {
     width: 100%;
     background: var(--background-light-gray);
     height: 1px;
+}
+
+section#summary, section#our-location, section#team-members {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
