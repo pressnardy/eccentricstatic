@@ -1,0 +1,86 @@
+
+:root {
+    --blue-background: rgb(0, 162, 255);
+    --yellow: rgb(255, 187, 0);
+}
+
+html, body {
+    max-width: 500;
+}
+body {
+    padding-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 450px;
+    font-size: 40px;
+    padding: 32px 16px;
+    gap: 16px;
+    background: black;
+}
+
+#google {
+    margin-top: 16px;
+    max-width: 150px;
+    
+}
+
+.according {
+    display: flex;
+    font-size: 45px;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 8px;
+}
+
+.over70 {
+    font-size: 45px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    background: var(--yellow);
+}
+
+.link {
+   
+    /* border: 1px solid red; */
+    margin-top: 8px;
+    background: rgb(0, 162, 255);
+    color: white;
+    font-size: 24px;
+    padding: 8px;
+
+}
+
+.clients {
+    font-size: 40px;
+}
+
+.dont {
+    padding: 16px;
+}
+
+
+
+.white {
+    color: white;
+}
+
+img#arrow {
+    max-width: 50px;
+    transform: rotate(90deg);
+    color: white;
+}
+
+.yellow {
+    color: var(--yellow);
+}
+
